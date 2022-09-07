@@ -36,7 +36,7 @@ public class User {
 	@Column
 	private int mobileNumber3;
 
-	@Column
+	@Column(name="firstName")
 	@Length(max = 120)
 	private String lesseeFirstName;
 
