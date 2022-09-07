@@ -17,7 +17,6 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.validator.constraints.Length;
 
 @Entity
-@Table(name = "users")
 public class User {
 
 	@Id
@@ -37,7 +36,7 @@ public class User {
 	@Column
 	private int mobileNumber3;
 
-	@Column
+	@Column(name="firstName")
 	@Length(max = 120)
 	private String lesseeFirstName;
 
