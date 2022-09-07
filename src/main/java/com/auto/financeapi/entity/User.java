@@ -17,7 +17,6 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.hibernate.validator.constraints.Length;
 
 @Entity
-@Table(name = "users")
 public class User {
 
 	@Id
