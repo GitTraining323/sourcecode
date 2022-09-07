@@ -17,7 +17,8 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-
+	
+//get 
 	@PostMapping(value = "v1/users")
 	public ResponseEntity<ResponseSuccess> signUpUser(@RequestBody AuthRequest authRequest) {
 		return userService.signUpUser(authRequest);
